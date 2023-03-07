@@ -1,0 +1,40 @@
+.container{
+    display:grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 1%;
+}
+
+header{
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    padding:15px;
+    margin-bottom: 10px;
+}
+
+h5.h6{
+    text-align: justify;
+}
+
+@media screen and (max-width: 767px){
+
+    .container{
+        display:block;
+        max-width: 90%;
+    }
+
+    .noticia{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+
+    .container{
+        max-width: 90%;
+        grid-template-columns: repeat(2,49%);
+    }
+
+    .noticia{
+        margin-bottom: 10px;
+    }
+}
